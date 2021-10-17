@@ -25,6 +25,10 @@ Route::get('r2',function (){
     return 'welcome';
 });*/
 
-Route::get('hello/{name?}',function ($name = 'Teng Hsin Ju'){
+Route::get('hello/{name}',function ($name){
     return 'Hello, '.$name;
 });
+
+/*Route::get('hello/{name?}',function ($name = 'Teng Hsin Ju'){
+    return 'Hello, '.$name;
+});*/
