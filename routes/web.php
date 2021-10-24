@@ -40,3 +40,7 @@ Route::get('hello/{name?}',function ($name = 'Everybody'){
 Route::get('hello/{name?}',function ($name='Everybody'){
     return 'Hello,'.$name;
 })->name('hello.index');
+
+Route::get('dashboard',function (){
+    return 'dashboard';
+});
